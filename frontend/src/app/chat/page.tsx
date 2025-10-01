@@ -88,7 +88,7 @@ export default function ChatPage() {
       updateChat(activeChat.id, [...updatedMessages, aiMessage])
     } catch (err) {
       console.error("Erreur IA :", err)
-      alert("❌ Impossible de contacter ton IA locale (LLaVA / Phi).")
+      alert("❌ Impossible de contacter ton IA locale.")
     } finally {
       setLoading(false)
     }
