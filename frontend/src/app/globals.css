@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body {
+  background: linear-gradient(
+    to bottom right,
+    #fdfcfb,
+    #e2d1c3,
+    #c8e6c9,
+    #f5f5dc
+  );
+  background-attachment: fixed;
+  background-size: 300% 300%;
+  animation: backgroundMove 20s ease infinite;
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.prose p {
+  margin: 0;
+}
+
+.prose ul {
+  margin: 0.25rem 0;
+  padding-left: 1rem;
+}
+
+.prose li {
+  list-style-type: "🐾 ";
+}
